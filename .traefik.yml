@@ -1,0 +1,18 @@
+displayName: Cookie Handler Plugin
+type: middleware
+
+import: github.com/vaspapadopoulos/traefik-cookie-handler-plugin
+
+summary: >
+  Performs an HTTP/HTTPS request to a specified (URL, HTTP Method) and
+  retrieves any `Set-Cookie` headers from the response. Then, the values of
+  the `Set-Cookie` headers are concatenated and assigned to the `Cookie`
+  header of the request that will be forwarded to the next Trafik middleware
+  or Traefik service.
+
+testData:
+  url: "https://a-domain.com/a-path"
+  method: "GET"
+  responseCookies:
+    - "JWT-SESSION"
+    - "XSRF-TOKEN"
