@@ -13,7 +13,7 @@ summary: >
 
 testData:
   url: "https://a-domain.com/a-path"
-  method: "GET"
+  method: "POST"
   responseCookies:
-    - "JWT-SESSION"
-    - "XSRF-TOKEN"
+    - "COOKIE-A"
+    - "COOKIE-B"
