@@ -29,7 +29,7 @@ repos:
           - mdformat-toc
           - mdformat-config
           - mdformat-gofmt
-        args: ["--number", "--wrap", "100"]
+        args: ["--number", "--wrap", "80"]
   # YAML
   - repo: https://github.com/adrienverge/yamllint
     rev: v1.26.3
