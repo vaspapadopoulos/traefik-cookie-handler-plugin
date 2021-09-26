@@ -89,8 +89,9 @@ http:
         - sonarQubeBadgesAuth
       rule: >
         Host(`my-sonarqube.domain.com`) &&
-        (Path(`/api/project_badges/measure`) && Path(`/api/project_badges/quality_gate`))
-        &&
+        (Path(`/api/project_badges/measure`) ||
+          Path(`/api/project_badges/quality_gate`)
+        ) &&
         Method(`GET`)
   middlewares:
     sonarQubeBadgesAuth:
