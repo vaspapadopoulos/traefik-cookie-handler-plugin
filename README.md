@@ -97,9 +97,7 @@ http:
     sonarQubeBadgesAuth:
       plugin:
         cookie-handler:
-          url: >
-            http://x.y.z.w:p/api/authentication/login?
-            login=some_user&password=some_password
+          url: http://x.y.z.w:p/api/authentication/login?login=some_user&password=some_password
           method: POST
           responseCookies:
             - JWT-SESSION
