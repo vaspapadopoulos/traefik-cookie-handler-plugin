@@ -1,6 +1,5 @@
 package traefik_cookie_handler_plugin_test
 
-
 import (
 	"context"
 	"net/http"
@@ -10,7 +9,7 @@ import (
 	cookieHandler "github.com/vaspapadopoulos/traefik-cookie-handler-plugin"
 )
 
-func CookieHandlerDemo(t *testing.T) {
+func TestCookieHandler(t *testing.T) {
 	cfg := cookieHandler.CreateConfig()
 	cfg.Url = "https://my-api.my-domain.com"
 	cfg.Method = http.MethodGet
